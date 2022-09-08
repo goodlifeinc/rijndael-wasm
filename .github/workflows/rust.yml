@@ -10,13 +10,21 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
+      - uses: actions/checkout@v3
+
+      - name: Install
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+
+      - name: Run cargo tests
+        run: cargo test --verbose
+      - name: Wasm test node
+        run: wasm-pack test --headless --node
+      - name: Wasm test chrome
+        run: wasm-pack test --headless --chrome
+      - name: Wasm test firefox
+        run: wasm-pack test --headless --firefox
+      - name: Wasm test safari
+        run: wasm-pack test --headless --safari
