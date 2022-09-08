@@ -1,8 +1,9 @@
 [package]
 name = "rijndael-wasm"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Evgeni Atanasov <genata93@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/goodlifeinc/rijndael-wasm"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
