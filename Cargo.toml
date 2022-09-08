@@ -1,6 +1,6 @@
 [package]
 name = "rijndael-wasm"
-version = "0.1.1"
+version = "0.1.3"
 authors = ["Evgeni Atanasov <genata93@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/goodlifeinc/rijndael-wasm"

@@ -1,4 +1,4 @@
-const { decrypt } = require('./pkg/rijndael_wasm');
+const { decrypt } = require('../pkg/rijndael_wasm');
 
 const kBase64 = 'VWZJhnG33pMKTzI3P5Sikoj6RL2G/4NFStXrzcUYWXw=';
 const ivBase64 = 'ODMyMDYyNzQzNDI1OTA3ODU4MjIzMjY0ODM1MTYwNjg=';
