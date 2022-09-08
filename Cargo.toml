@@ -1,5 +1,5 @@
 [package]
-name = "rijndael-256-wasm"
+name = "rijndael-wasm"
 version = "0.1.0"
 authors = ["Evgeni Atanasov <genata93@gmail.com>"]
 edition = "2018"
