@@ -21,7 +21,7 @@ jobs:
       - name: Run cargo tests
         run: cargo test --verbose
       - name: Wasm test node
-        run: wasm-pack test --headless --node
+        run: wasm-pack test --node
       - name: Wasm test chrome
         run: wasm-pack test --headless --chrome
       - name: Wasm test firefox
